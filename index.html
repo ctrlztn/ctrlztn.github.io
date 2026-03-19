@@ -13,21 +13,45 @@
         color: white;
     }
 
-    h1 {
+    /* Header Card */
+    .header-card {
+        background: #1a1a1a;
+        padding: 40px 20px;
         text-align: center;
-        margin-top: 40px;
-        font-size: 50px;
+        margin-bottom: 40px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    }
+
+    .header-card h1 {
+        margin: 0;
+        font-size: 48px;
         letter-spacing: 2px;
     }
 
-    h1 span {
+    .header-card span {
+        display: block;
+        font-size: 18px;
+        color: #aaa;
+        margin-top: 10px;
+    }
+
+    h1.projects-title {
+        text-align: center;
+        margin-top: 0;
+        font-size: 36px;
+        letter-spacing: 2px;
+    }
+
+    h1.projects-title span {
         display: block;
         color: #444;
     }
 
     .projects {
         width: 80%;
-        margin: 50px auto;
+        margin: 0 auto 50px auto;
     }
 
     .project-card {
@@ -37,6 +61,7 @@
         padding: 15px;
         border-radius: 15px;
         transition: 0.3s;
+        background: #121212;
     }
 
     .project-card:hover {
@@ -76,14 +101,20 @@
 
 <body>
 
-<h1>RECENT <span>PROJECTS</span></h1>
+<!-- Header Card -->
+<div class="header-card">
+    <h1>Zuchini</h1>
+    <span>Full-Stack Developer & Portfolio</span>
+</div>
+
+<h1 class="projects-title">RECENT <span>PROJECTS</span></h1>
 
 <div class="projects">
 
     <div class="project-card">
         <img src="../img/crts.png" class="project-img">
         <div class="project-info">
-            <h2> Case Records Tracking System</h2>
+            <h2>Case Records Tracking System</h2>
             <p>For tracking case record folders</p>
             <a href="https://github.com/ctrlztn/caserecords" target="_blank">View Project</a>
         </div>
@@ -92,7 +123,7 @@
     <div class="project-card">
         <img src="../img/announcement.png" class="project-img">
         <div class="project-info">
-            <h2>Student Announcement System</h2>
+            <h2>PingBoard: A Student Announcement System</h2>
             <p>PHP system with email notifications</p>
             <a href="https://github.com/ctrlztn/StudentAnnouncementSystem" target="_blank">View Project</a>
         </div>
@@ -101,7 +132,7 @@
     <div class="project-card">
         <img src="../img/fdas.png" class="project-img">
         <div class="project-info">
-            <h2>Fire Detection and  Alarm System</h2>
+            <h2>Fire Detection and Alarm System</h2>
             <p>Arduino + SMS/email alert system</p>
             <a href="https://github.com/ctrlztn/FireDetectionAndAlarmSystem" target="_blank">View Project</a>
         </div>
@@ -112,7 +143,7 @@
         <div class="project-info">
             <h2>TangQuery: The CSU-Gonzaga Inquiry Assistance Chatbot</h2>
             <p>Capstone Project. Rasa-powered AI chatbot to answer FAQs from students</p>
-            <a href="https://tangquery.twinsolution.net/Chatbot/welcome.php" target="_blank">View Project(Chatbot Not Online)</a>
+            <a href="https://tangquery.twinsolution.net/Chatbot/welcome.php" target="_blank">View Project (Chatbot Not Online)</a>
         </div>
     </div>
 
